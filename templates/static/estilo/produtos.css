@@ -1,0 +1,289 @@
+
+.InfoBox{
+    display: flex;
+}
+
+
+.img img{
+    width: 50%;
+}
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+
+}
+
+.msg h1{
+text-align: center;
+font-weight: 900;
+font-size: 3.9em;
+}
+.msg p{
+    font-weight: 600;
+    font-size: 1.15em;
+}
+.msg{
+    text-align: center;
+
+
+}
+.msg small{
+    font-weight: 600;
+    opacity: 0.7;
+    text-transform: uppercase;
+    font-size: 0.7em;
+}
+
+
+
+
+.produtos{
+    margin-top: 200px;
+    background-color: #011f2b;
+    height: 100%;
+    padding: 10px 0px;
+    margin: unset  0px;
+
+}
+.Box h1{
+    text-align: center;
+    font-weight: 600;
+
+}
+
+
+
+
+.BoxProdutos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.Box h1#title{
+    margin-bottom: 100px;
+}
+.produto-item{
+    overflow: hidden;
+
+    margin: 0px 8px;
+    margin-bottom: 40px;
+    width: 20%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.produto-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #00141b;
+    border-radius: 8px;
+
+    
+    padding: 8px 0px;
+    margin-bottom: 18px;
+}
+.produto-img img{
+    width: 100%;
+}
+
+
+.produto-item::before{
+    content: '';
+
+    width: 0%;
+    height: 100%;
+
+    position: absolute;
+    background-color: #09bdd1a9;
+    z-index: 10;
+    right: 0;
+    
+    transition: 0.9s;
+    transition-delay: 0.4s, 250ms ;
+    
+}
+.produto-item:hover::before{
+    width: 100%;
+    transition-delay: 0s, 250ms ;
+    transition: 0.6s;
+
+}
+
+
+.info-ani{
+    position: absolute;
+    z-index: 12;
+    right: -80px;
+    opacity: 0;
+    transition: 0.6s;
+    transition-delay: 0s, 250ms;
+
+}
+.info-ani button{
+    background-color: #043041;
+    padding: 8px 18px;
+
+    border: unset;
+    border-radius: 10px;    
+    outline: unset;
+
+    color: white;
+    font-size: 0.75em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.produto-item:hover .info-ani{
+    opacity: 1;
+    right: 24%;
+    transition-delay: 0.5s,250ms;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 424.98px) { 
+    .produtos{
+        margin-top: 80px;
+    }
+    .produto-item{
+        width: 42%;
+        margin: auto 4px;
+        margin-bottom: 30px;
+    }
+    .container{
+        margin: unset;
+        max-width: none ;
+    }
+
+    .info-ani{
+        font-size: 0.72em;
+    }
+    .produto-item:hover .info-ani{
+        opacity: 1;
+        right: 13%;
+
+    }
+}
+@media (min-width: 425px) and  (max-width: 575.98px) { 
+    .produtos{
+        margin-top: 120px;
+    }
+    .produto-item{
+        width: 38%;
+        margin: auto 18px;
+        margin-bottom: 30px;
+    }
+    .container{
+        margin: unset;
+        max-width: none ;
+    }
+
+    .info-ani{
+        font-size: 0.9em;
+    }
+    .produto-item:hover .info-ani{
+        opacity: 1;
+        right: 17%;
+        margin: auto;
+    } 
+ }
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+
+    .produto-item{
+        width: 26%;
+        margin: auto 26px;
+        margin-bottom: 30px;
+    }
+    .container{
+        margin: unset;
+        max-width: none ;
+    }
+
+    .info-ani{
+        font-size: 0.9em;
+    }
+    .produto-item:hover .info-ani{
+        opacity: 1;
+        right: 12%;
+    } 
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+
+    
+    .info-ani{
+        font-size: 0.8em;
+    }
+    .produto-item:hover .info-ani{
+        opacity: 1;
+        right: 9.8%;
+    }    
+
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .info-ani{
+        font-size: 0.8em;
+    }
+    .produto-item:hover .info-ani{
+        opacity: 1;
+        right: 20%;
+    }    
+ }
+
+@media (min-width: 1200px) {
+    info-ani{
+    font-size: 0.8em;
+}
+.produto-item:hover .info-ani{
+    opacity: 1;
+    right: 20%;
+}   
+}

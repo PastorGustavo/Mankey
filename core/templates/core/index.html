@@ -1,0 +1,105 @@
+{%extends 'base.html'%}
+{%load static%}
+
+{% block 'css' %}
+
+<!--Css link-->
+<link rel="stylesheet" href="{% static 'estilo/css.css'%}">
+<link rel="stylesheet" href="{% static 'estilo/geral.css'%}">
+<!--Css link-->
+
+{% endblock 'css' %}
+
+
+
+{% block 'corpo' %}
+
+
+
+
+
+    <!--Informação sobre a loja-->
+    <div class="container-fluid mb">
+
+      <div class="InfoBox">
+
+        <!--Local onde fica as informações do site-->
+        <div class="TextBox">
+
+          <h1>O seu guarda-roupas online</h1>
+
+          <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, minus. Repudiandae dolores voluptatem quaerat eum obcaecati, perspiciatis earum, hic praesentium atque quae amet magnam consequatur, fugiat dolore aliquam omnis soluta!
+          </p>
+
+        </div>
+
+        <!--Local das imagem das camisetas-->
+        <div class="ImgBox">
+
+          <div class="Img Img1">
+            <img src="{%static 'estilo/img/blue1.png'%}" alt="">
+            <img src="{%static 'estilo/img/bluepng.png'%}" alt="">
+          </div>
+
+          <div class="Img Img2">
+            <img src="{%static 'estilo/img/roxo.png'%}" alt="">
+            <img src="{%static 'estilo/img/man.png'%}" alt="">
+          </div>
+
+        
+        </div>
+
+      </div>
+
+    </div>
+    <!--Informação sobre a loja-->
+
+
+    <!--Classes de produtos-->
+    <div class="container-fluid">
+
+      
+
+      <div class="BoxProdutos">
+
+
+        <div class="produto">
+
+          <img src="{%static 'estilo/img/i2mg@2x.png'%}" class="" alt="">
+
+          <div class="Texto">
+            <h4>Nacionais</h4>
+            <p>Camisetas de times brasileiros!!</p>
+            <button onclick="Redirect('local')">Ir ver</button>
+          
+          </div>
+        </div>
+
+        <div class="produto">
+
+          
+          <img src="{%static 'estilo/img/france.png'%}" class="fr" id="fr" alt="">
+
+          <div class="Texto">
+            <h4>Internacionais</h4>
+            <p>Camisetas de time Internacionais</p>
+
+            <button onclick="Redirect('local')">Ir ver</button>
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+    </div>
+    <!--Classes de produtos-->
+    <script src="{%static 'js/index.js'%}"></script>
+
+{% endblock 'corpo' %}
+
+
+
+

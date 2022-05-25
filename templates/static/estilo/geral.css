@@ -1,0 +1,24 @@
+*{
+    font-family: Epidemic, sans-serif;
+    color: white;
+}
+
+
+
+
+/*Cor do background*/
+body{
+    background-color: #00040c;
+}
+#Logo{
+    /*Aumentando o tamanho do menu*/
+    
+    font-size: 1.4em;
+}/*Logo da barra de navegação*/
+
+.menu{
+    /*Aumentando a grossura de todas as palavras no menu*/
+    
+    font-weight: 600;
+    }/*Barra de navegação*/
+    

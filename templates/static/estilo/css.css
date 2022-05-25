@@ -1,0 +1,345 @@
+
+
+
+/*Formatação da Barra de navegção topo*/
+
+
+
+#Produtos{
+    /*Criando um background para os produtos*/
+    
+    background-color: #136b61;   
+    color: white;
+
+    border-radius: 5px;
+    padding: 6px 18px;
+}/*Botão com background*/
+
+
+/*Formatação da area de texto/Imgs*/
+.InfoBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 96%;
+    margin: auto;
+   
+}
+
+.InfoBox .TextBox div{
+    width: 50%;
+}
+
+.TextBox{
+    text-align: 22px;
+}
+.TextBox h1{
+    font-weight: 700;
+    font-size: 2.7em;
+    
+}
+
+
+
+
+
+/*Formatação da caixa com classe de produtos*/
+.BoxProdutos{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+
+}/*Formatando como os produtos vão se comportar*/
+
+.produto{
+    /*Definindo a estrutura da caixa onde fica as categorias*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(219, 219, 219);
+
+}/*Formatando como os itens dentro de produtosvão se comportar*/
+
+.produto img{
+    width: 47%;
+    border-radius: 8px;
+    box-shadow: 4px 0px 12px rgb(15, 15, 15);
+
+}/*Formatando img*/
+
+
+.Texto{
+    background-color: #121b31;
+    height: 94%;
+
+    border-radius: 0px 16px 16px 0px ;
+    padding-right: 36px;
+    padding-left: 14px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+
+ 
+}/*Formatando a caixa de texto*/
+.Texto button{
+    width: 60%;
+
+    background-color: #136b61;
+
+    border: unset;
+    outline: unset;
+    border-radius: 4px;
+
+    padding: 6px 12px;
+
+    font-size: 0.78em;
+    font-weight: 500;
+
+    text-transform: uppercase;
+
+   
+}
+
+
+
+
+
+
+
+
+
+.ImgBox{
+    width: 100%;
+    
+}
+.Img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+}
+.Img img{
+    margin: -10px;
+}
+.Img1 img{
+    width: 50%;
+    transform: rotate(10deg);
+    margin-bottom: 10px;
+}
+.Img2 img{
+    width: 50%;
+    transform: rotate(-10deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 575.98px) { 
+    .ImgBox{
+        display: none;
+    }
+    .TextBox{
+        text-align: center;
+        font-size: 0.9em;
+    }
+    .TextBox h1{
+        font-size: 1.9em;
+    }
+    
+
+    .BoxProdutos{
+        flex-direction: column;
+        height: 300px;
+    }
+
+
+    .produto{
+        margin: 20px auto;
+        height: 70%;
+    }
+
+
+    .produto img{
+         width: 56%;
+    }
+   
+    img#fr{
+        width: 56%;
+    }
+
+    .Texto{
+        height: 88%;
+        font-size: 0.5em;
+        font-weight: 600;
+        padding: 14px 10px;
+    }
+    .Texto h4{
+        font-weight: 800;
+
+        font-size: 1.1em;
+    }
+
+    div.mb{
+        margin-bottom: 20px;
+    }
+ }
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+
+    .ImgBox{
+        display: none;
+    }
+    .TextBox{
+        text-align: center;
+    }
+
+    .BoxProdutos{
+        flex-direction: column;
+        height: 300px;
+    }
+
+
+    .produto{
+        margin: 20px auto;
+        height: 70%;
+    }
+
+
+    .produto img{
+         width: 31%;
+    }
+   
+    img#fr{
+        width: 31%;
+    }
+
+    .Texto{
+        font-size: 0.95em;
+    }
+    .Texto h4{
+        font-size: 1.35em;
+    }
+
+ }
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+  /*  .Texto{
+        font-size: 0.9em;
+        width:50%;
+        height: 100px;
+        border: 1px solid red;
+
+    }
+    .Texto h4{
+        font-size: 1.3em;
+    }
+
+*/
+    .BoxProdutos{
+        flex-direction: column;
+        height: 300px;
+    }
+
+
+    .produto{
+        margin: 20px auto;
+        height: 70%;
+    }
+
+
+    .produto img{
+         width: 31%;
+    }
+   
+    img#fr{
+        width: 31%;
+    }
+    
+}
+
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    #Produtos{
+        margin-left:14px ;
+    }
+    .Texto{
+        font-size: 0.9em;
+    }
+    .Texto h4{
+        font-size: 1.3em;
+    }
+
+    .Texto{
+        width:50%;
+    }
+
+
+
+ }
+
+
+@media (min-width: 1200px) { 
+
+    /*Barra de navegação*/
+    #Produtos{
+        margin-left:14px ;
+    }
+
+    /*Padding no container*/
+    .p{
+        padding: 8px 24px;
+    }
+ }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mb{
+    margin-bottom: 200px;
+    margin-top: 40px;
+}
+
+
+img.fr{
+    width: 53%;
+}
+
+
+
+
+
+
+@media (max-width: 575.98px) {  }
+
+@media (min-width: 576px) and (max-width: 767.98px) {  }
+
+@media (min-width: 768px) and (max-width: 991.98px) {  }
+
+@media (min-width: 992px) and (max-width: 1199.98px) {  }
+
+@media (min-width: 1200px) {  }

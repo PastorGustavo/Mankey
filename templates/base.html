@@ -1,0 +1,96 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!--Fontawesome link-->
+    <link rel="stylesheet" href="{%static 'vendor/bootstrap4/css/bootstrap.css' %}">
+    <!--Fontawesome link-->
+
+
+    <!--Fontawesome link-->
+    <link rel="stylesheet" href="{%static 'vendor/fontawesome/css/all.min.css' %}">
+    <!--Fontawesome link-->
+
+    <!--Iconic link-->
+    <link rel="stylesheet" href="{%static 'vendor/iconic/font/css/open-iconic-bootstrap.css' %}">
+    <!--Iconic link-->
+
+    <!--Normalize link-->
+    <link rel="stylesheet" href="{%static 'vendor/normalize.css' %}">
+    <!--Normalize link-->
+
+    <!--Html5Shiv-->
+    <!--[if lt IE 9]>
+    <script src="{%static 'vendor/html5shiv.js' %}"></script>
+    <![endif]-->
+    <!--Html5Shiv-->
+
+    {% block 'css' %}
+    {% endblock 'css' %}
+
+    <!--imagem que fica na aba-->
+    <!--<link rel="icon" href="imagens/favicon.png">-->
+    <!--imagem que fica na aba-->
+
+</head>
+<body>
+
+
+    <!--Nav-->
+    <div class="container-fluid p">
+
+        <nav class="navbar navbar-expand-sm navbar-dark  menu">
+
+            <!--Logo-->
+            <a class="navbar-brand" href="{%url 'core:index'%}" id="Logo">Mankey</a>
+            <!--Logo-->
+
+            <!--Menu hamburger-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Menu hamburger-->
+
+
+            <!--Menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                
+              <ul class="navbar-nav ml-auto">
+
+
+
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="{%url 'core:produtos' %}" id="Produtos">Produtos</a>
+                </li>
+                
+
+
+              </ul>
+
+            </div>
+               <!--Menu -->
+
+        </nav>
+
+    </div>
+    <!--Nav-->
+
+
+
+    {% block 'corpo' %}{% endblock 'corpo' %}
+    
+
+    <script src="{%static 'https://code.jquery.com/jquery-3.3.1.slim.min.js' %}"></script>
+    <script src="{%static 'https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js' %}"></script>
+    <script src="{%static 'vendor/bootstrap4/js/bootstrap.min.js' %}"></script>
+    
+</body>
+</html>
