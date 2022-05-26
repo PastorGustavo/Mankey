@@ -10,7 +10,7 @@ class Produto(models.Model):
     pais =  models.CharField(
         max_length=2,
         choices=(
-            ('Br','Brasil'),
-            ('ES','Internacional')
+            ('br','Brasil'),
+            ('es','Internacional')
             )
         )

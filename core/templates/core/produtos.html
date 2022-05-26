@@ -49,105 +49,27 @@
 
             <div class="BoxProdutos">
 
+
+                {%for produto in produtos%}
                 <div class="produto-item">
 
                     <div class="produto-img">
-                        <img src="estilo/img/roxo.png" alt="">
+                        <img src="{{produto.img.url}}" alt="">
                     </div>
                     <div class="info">
-                    <h5>Camiseta</h4>
-                    <h6>R$ 89,99</h6></div>
+                    <h5>{{produto.nome}}</h4>
+                    <h6>R$ {{produto.preco}},99</h6></div>
 
                     <div class="info-ani">
+                        
+                    <a href="{{produto.link}}">
                         <button>Ver detalhes</button>
+                    </a>
+
                     </div>
                 </div>
+                {%endfor%}
 
-                <div class="produto-item">
-
-                    <div class="produto-img">
-                        <img src="estilo/img/roxo.png" alt="">
-                    </div>
-
-                    <h5>Camiseta</h4>
-                    <h6>R$ 89,99</h6>
-                </div>
-
-                <div class="produto-item">
-
-                    <div class="produto-img">
-                        <img src="estilo/img/roxo.png" alt="">
-                    </div>
-
-                    <h5>Camiseta</h4>
-                    <h6>R$ 89,99</h6>
-                </div>
-
-                <div class="produto-item">
-
-                    <div class="produto-img">
-                        <img src="estilo/img/roxo.png" alt="">
-                    </div>
-
-                    <h5>Camiseta</h4>
-                    <h6>R$ 89,99</h6>
-                </div>
-
-
-                <div class="produto-item">
-
-                    <div class="produto-img">
-                        <img src="estilo/img/roxo.png" alt="">
-                    </div>
-                    <div class="info">
-                    <h5>Camiseta</h4>
-                    <h6>R$ 89,99</h6></div>
-
-                    <div class="info-ani">
-                        <button>Ver detalhes</button>
-                    </div>
-                </div>
-
-                <div class="produto-item">
-
-                    <div class="produto-img">
-                        <img src="estilo/img/roxo.png" alt="">
-                    </div>
-                    <div class="info">
-                    <h5>Camiseta</h4>
-                    <h6>R$ 89,99</h6></div>
-
-                    <div class="info-ani">
-                        <button>Ver detalhes</button>
-                    </div>
-                </div>
-
-                <div class="produto-item">
-
-                    <div class="produto-img">
-                        <img src="estilo/img/roxo.png" alt="">
-                    </div>
-                    <div class="info">
-                    <h5>Camiseta</h4>
-                    <h6>R$ 89,99</h6></div>
-
-                    <div class="info-ani">
-                        <button>Ver detalhes</button>
-                    </div>
-                </div>
-                <div class="produto-item">
-
-                    <div class="produto-img">
-                        <img src="estilo/img/roxo.png" alt="">
-                    </div>
-                    <div class="info">
-                    <h5>Camiseta</h4>
-                    <h6>R$ 89,99</h6></div>
-
-                    <div class="info-ani">
-                        <button>Ver detalhes</button>
-                    </div>
-                </div>
             </div>
 
         </div>

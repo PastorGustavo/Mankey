@@ -1,7 +1,4 @@
-function Redirect(local){
-    
-    window.location.href = 'IndexProdutos.html'
+function Redirect(local){    
+    window.location.href = local
 }
-
-
 
